@@ -20,6 +20,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  height: 100vh;
 }
 
 .main-container .content * {
@@ -111,6 +112,7 @@ body {
 .main-container .content form .btn {
   background-color: #54E6AF;
   font-weight: 600;
+  -webkit-appearance: none;
 }
 
 @media screen and (min-width: 768px) {

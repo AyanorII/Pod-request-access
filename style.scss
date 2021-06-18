@@ -22,6 +22,7 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
+        height: 100vh;
 
         * {
             mix-blend-mode: screen;
@@ -100,6 +101,7 @@ body {
             .btn {
                 background-color: #54E6AF;
                 font-weight: 600;
+                -webkit-appearance: none;
             }
         }
     }
