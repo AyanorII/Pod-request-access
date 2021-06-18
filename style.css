@@ -14,6 +14,15 @@ body {
   display: none;
 }
 
+#error-message {
+  color: red;
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  font-weight: 800;
+  font-size: 12px;
+}
+
 .main-container .content {
   padding: 0 24px 94px;
   background-image: url(assets/mobile/image-host.jpg);
@@ -101,6 +110,21 @@ body {
   border: none;
 }
 
+.main-container .content form input:-webkit-autofill,
+.main-container .content form input:-webkit-autofill:hover,
+.main-container .content form input:-webkit-autofill:focus,
+.main-container .content form textarea:-webkit-autofill,
+.main-container .content form textarea:-webkit-autofill:hover,
+.main-container .content form textarea:-webkit-autofill:focus,
+.main-container .content form select:-webkit-autofill,
+.main-container .content form select:-webkit-autofill:hover,
+.main-container .content form select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #2C344B inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 .main-container .content form .content__input {
   padding-left: 20px;
   margin-bottom: 16px;
@@ -175,8 +199,9 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
     width: 65%;
+    max-width: 455px;
     position: relative;
-    margin-bottom: 63px;
+    margin-bottom: 0;
   }
   .main-container .content form .content__input {
     margin: 0;
@@ -184,15 +209,19 @@ body {
   }
   .main-container .content form .content__input::-webkit-input-placeholder {
     font-weight: 600;
+    color: #FFF;
   }
   .main-container .content form .content__input:-ms-input-placeholder {
     font-weight: 600;
+    color: #FFF;
   }
   .main-container .content form .content__input::-ms-input-placeholder {
     font-weight: 600;
+    color: #FFF;
   }
   .main-container .content form .content__input::placeholder {
     font-weight: 600;
+    color: #FFF;
   }
   .main-container .content form .btn {
     position: absolute;
@@ -201,10 +230,11 @@ body {
     padding: 12px 27px;
   }
   .main-container .content__icons {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
     height: 29px;
+    margin-top: 63px;
   }
   .main-container .content__icons img {
     height: 100%;

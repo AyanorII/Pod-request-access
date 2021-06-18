@@ -31,16 +31,17 @@
         <img src="assets/desktop/pocket-casts.svg" alt="">
       </div>
   
-      <form action="">
-        <input type="email" name="" id="" placeholder="Email address" class="content__input">
+      <form action="" id="" name="myForm" onsubmit="return validateForm()">
+        <input type="email" name="email" id="email" placeholder="Email address" class="content__input" >
         <input type="submit" value="Request access" class="btn"> 
       </form>
+      <div id="error-message"></div>
     </div>
   </div>
 
-
   <img src="assets/desktop/bg-pattern-dots.svg" alt="" class="green-dots tablet">
 
+  <script src="script.js"></script>
 </body>
 
 </html>
